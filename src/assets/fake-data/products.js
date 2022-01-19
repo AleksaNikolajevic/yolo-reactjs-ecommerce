@@ -41,7 +41,7 @@ const products = [
         price: '189000',
         image01: product_01_image_01,
         image02: product_01_image_02,
-        categorySlug: "ao-thun",
+        categorySlug: "test",
         colors: ["white", "red", "orange"],
         slug: "ao-thun-dinosaur-01",
         size: ["s", "m", "l", "xl"],

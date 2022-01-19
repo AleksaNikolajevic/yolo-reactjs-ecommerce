@@ -5,19 +5,19 @@ import logo from '../assets/images/Logo-2.png'
 
 const mainNav = [
     {
-        display: "Trang chủ",
+        display: "Fly london",
         path: "/"
     },
     {
-        display: "Sản phẩm",
+        display: "Katalog",
         path: "/catalog"
     },
     {
-        display: "Phụ kiện",
+        display: "Modni dodaci",
         path: "/accessories"
     },
     {
-        display: "Liên hệ",
+        display: "Kontakt",
         path: "/contact"
     }
 ]
