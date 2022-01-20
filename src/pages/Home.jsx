@@ -16,7 +16,7 @@ import banner from '../assets/images/banner.png'
 
 const Home = () => {
     return (
-        <Helmet title="Trang chủ">
+        <Helmet title="Fly London Srbija">
             {/* hero slider */}
             <HeroSlider
                 data={heroSliderData}
