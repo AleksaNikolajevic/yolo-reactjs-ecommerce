@@ -52,7 +52,8 @@ const Home = () => {
             {/* best selling section */}
             <Section>
                 <SectionTitle>
-                    top sản phẩm bán chạy trong tuần
+                AFTER PARTY
+
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -81,7 +82,7 @@ const Home = () => {
             {/* new arrival section */}
             <Section>
                 <SectionTitle>
-                    sản phẩm mới
+                    Preporučujemo
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -120,7 +121,7 @@ const Home = () => {
             {/* popular product section */}
             <Section>
                 <SectionTitle>
-                    phổ biến
+                    Budite uvek u trendu
                 </SectionTitle>
                 <SectionBody>
                     <Grid

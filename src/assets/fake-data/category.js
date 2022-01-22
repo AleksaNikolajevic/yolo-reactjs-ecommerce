@@ -1,7 +1,7 @@
 const category = [
     {
-        display: "Áo thun",
-        categorySlug: "ao-thun"
+        display: "Čizme",
+        categorySlug: "cizme"
     },
     {
         display: "Áo somi",

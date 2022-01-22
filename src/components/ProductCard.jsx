@@ -37,7 +37,7 @@ const ProductCard = props => {
                     animate={true}
                     onClick={() => dispatch(set(props.slug))}
                 >
-                    chọn mua
+                    Dodaj u korpu
                 </Button>
             </div>
         </div>

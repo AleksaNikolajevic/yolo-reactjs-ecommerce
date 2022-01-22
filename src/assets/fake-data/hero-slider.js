@@ -4,25 +4,25 @@ const img3 = require("../images/slider/slide_3.png").default
 
 const heroSliderData = [
     {
-        title: "Polo nữ Pima cao cấp",
-        description: "Nhắc đến sự đẳng cấp là không thể không nhắc đến dòng vải pima. Nó tạo nên chất lượng tốt nhất cho bất kỳ sản phẩm thời trang nào. Sợi vải pima dài và dày hơn sợi cotton thông thường gấp đôi nhờ công nghệ dệt tân tiến. Điều đó làm cho kết cấu áo polo chắc chắn, bền chặt, hạn chế tối đa xù lông, mềm mượt, bền màu, vô cùng đảm bảo sức khoẻ người dùng",
+        title: "AFTER PARTY",
+        description: "Našli smo novu nadu. Našli smo način da nastavimo. Kada se svetla ugase, mi se dižemo. Nema smisla zaustavljati zabavu - moramo ići dalje i nastaviti i ustajati kroz noć. U tami mi svetlimo, sijamo i slavimo ovaj rastući duh različitosti, jedinstvenosti i napretka. Slušajte glasove, slušajte muziku, slušajte aplauze: mi smo duh mode, napretka, zabave i vodimo duh do najzabavnijih i najnaprednijih avantura koje možete zamisliti. Pridružite nam se i otkrijte blistavu noć. Pridružite nam se i otkrijte after parti.",
         img: img1,
-        color: "blue",
-        path: "/catalog/ao-thun-dinosaur-01"
+        color: "Black",
+        path: "/catalog/P141633001"
     },
     {
-        title: "Polo Nữ Dáng Suông Modal",
-        description: "Polo nữ dáng suông Modal sử dụng công nghệ vải cao cấp thân thiện với môi trường sản xuất độc quyền chống co rút vải, áo polo nữ vải modal là sản phẩm thích hợp cho các bạn có môi trường làm việc năng động như hiện nay",
+        title: "Chelse boots",
+        description: "Jedinstvena završna obrada. Tokom godina našu paletu boja naših ženskih čizama Chelsea upotpunili smo kompletom završnih obrada, od šarmantnog sjaja do vodootpornog somota, koji vam omogućavaju da svoje čizme koristite u svakoj prilici.",
         img: img2,
-        path: "/catalog/ao-thun-dinosaur-02",
-        color: "pink"
+        path: "/catalog/P141941028",
+        color: "Black"
     },
     {
-        title: "Polo Nữ Coolmax Lacoste",
-        description: "Mẫu áo polo nữ được làm bằng chất liệu coolmax đem lại cảm giác mát lạnh khi mặc. Thiết kế mẫu áo polo coolmax này có kiểu dáng cực kỳ thoải mái. Tạo sự gọn gàng hứa hẹn sẽ là mẫu áo polo vô cùng hot trong thời điểm sắp tới",
+        title: "Artisan kolekcija",
+        description: "Zimska kolekcija",
         img: img3,
-        path: "/catalog/ao-thun-dinosaur-03",
-        color: "orange"
+        path: "/catalog/P142912003",
+        color: "Black"
     }
 ]
 

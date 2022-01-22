@@ -5,7 +5,7 @@ import logo from '../assets/images/Logo-2.png'
 
 const mainNav = [
     {
-        display: "Fly london",
+        display: "FlyLondonSrbija",
         path: "/"
     },
     {

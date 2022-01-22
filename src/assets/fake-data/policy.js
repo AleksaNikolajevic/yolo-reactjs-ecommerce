@@ -1,22 +1,22 @@
 const policy = [
     {
-        name: "Miễn phí giao hàng",
-        description: "Miễn phí ship với đơn hàng > 239K",
+        name: "Besplatna dostava",
+        description: "Besplatna dostava za proizvode u vrednosti preko 3000 dinara",
         icon: "bx bx-shopping-bag"
     },
     {
-        name: "Thanh toán COD",
-        description: "Thanh toán khi nhận hàng (COD)",
+        name: "Plaćanje pouzeženjem",
+        description: "Mogućnost plaćanja pouzećem i onlajn",
         icon: "bx bx-credit-card"
     },
     {
-        name: "Khách hàng VIP",
-        description: "Ưu đãi dành cho khách hàng VIP",
+        name: "Korisnička podrška",
+        description: "Dostupna korisnička podrška od 08:00 do 17:00",
         icon: "bx bx-diamond"
     },
     {
-        name: "Hỗ trợ bảo hành",
-        description: "Đổi, sửa đồ tại tất cả store",
+        name: "Mogućnost vraćanja proizvoda",
+        description: "Vraćanje do proizvoda do 14 dana u slučaju onlajn kupovine",
         icon: "bx bx-donate-heart"
     }
 ]
