@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Test = () => {
+const Policy = () => {
     return (
         <div className="container-fluid">
 
@@ -57,4 +57,4 @@ Ukoliko nismo u mogućnosti da vam obezbedimo pojedine od više artikala koje sa
     )
 }
 
-export default Test
+export default Policy

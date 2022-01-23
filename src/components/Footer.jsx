@@ -55,11 +55,12 @@ const Footer = () => {
                 >
                     <div>
                         <div className="footer__title">
-                            Tổng đài hỗ trợ
+                            Kontakt
                         </div>
                         <div className="footer__content">
                             <p>
-                                Liên hệ đặt hàng <strong>0123456789</strong>
+                                
+Beogradskog Bataljona 38, 11000 Beograd
                             </p>
                             <p>
                                 Thắc mắc đơn hàng <strong>0123456789</strong>
