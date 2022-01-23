@@ -8,38 +8,38 @@ import logo from '../assets/images/Logo-2.png'
 
 const footerAboutLinks = [
     {
-        display: "Giới thiệu",
+        display: "FLY London Outlet",
         path: "/about"
     },
     {
-        display: "Liên hệ",
+        display: "FLY London Terazije     ",
         path: "/about"
     },
     {
-        display: "Tuyển dụng",
+        display: "FLY London Kralja Petra        ",
         path: "/about"
     },
     {
-        display: "Tin tức",
+        display: "FLY London Merkator        ",
         path: "/about"
     },
     {
-        display: "Hệ thống cửa hàng",
+        display: "FLY London Beo Shopping        ",
         path: "/about"
     }
 ]
 
 const footerCustomerLinks = [
     {
-        display: "Chính sách đổi trả",
+        display: "Kako kupiti",
         path: "/about"
     },
     {
-        display: "Chính sách bảo hành",
+        display: "Uslovi korišćenja",
         path: "/about"
     },
     {
-        display: "Chính sách hoàn tiền",
+        display: "Načini plaćanja",
         path: "/about"
     }
 ]
@@ -63,16 +63,18 @@ const Footer = () => {
 Beogradskog Bataljona 38, 11000 Beograd
                             </p>
                             <p>
-                                Thắc mắc đơn hàng <strong>0123456789</strong>
+                            office@dip-trade.co.rs
                             </p>
                             <p>
-                                Góp ý, khiếu nại <strong>0123456789</strong>
+                            011/23-94-224
+
                             </p>
                         </div>
                     </div>
                     <div>
                         <div className="footer__title">
-                            Về Yolo
+                        Prodajna mesta
+
                         </div>
                         <div className="footer__content">
                             {
@@ -88,7 +90,7 @@ Beogradskog Bataljona 38, 11000 Beograd
                     </div>
                     <div>
                         <div className="footer__title">
-                            Chăm sóc khách hàng
+                            Informacije
                         </div>
                         <div className="footer__content">
                             {
@@ -109,7 +111,9 @@ Beogradskog Bataljona 38, 11000 Beograd
                             </Link>
                         </p>
                         <p>
-                            Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống năng động, tích cực hơn.
+                        DIP-TRADE d.o.o. je privatno preduzeće, osnovano 1998. godine. U svom višegodišnjem poslovanju bavi se uvozom, izvozom, veleprodajom i maloprodajom obuće, odeće, aksesoara, sportske opreme i pratećeg programa i proizvodnjom naočara za sunce.
+
+U našoj ponudi možete pronaći brojne svetske robne marke obuće i aksesoara vrhunskog kvaliteta koje zastupamo. Robne marke obuće koje zastupamo su FLY LONDON, SOFTINOS, FOREVA, ASPORTUGUESAS, LEMON JELLY, TATUAGGI, JJ HEITOR, HELENE ROUGE, EXCEED, THE FLEXX, TAKE ME, RIA MENORCA, MARILA, STARLOVE, ART, VERBENAS, BEARPAW. Robne marke koje se bave proizvodnjom kožne galanterije a nalaze se u našoj ponudi su UGGARI i PULICATI.U našoj ponudi nalaze se naočare za sunce robnih marki FLY LONDON EYEWEAR i DIP SUNGLASSES.
                         </p>
                     </div>
                 </Grid>
