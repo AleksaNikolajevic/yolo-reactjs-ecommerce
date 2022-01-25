@@ -8,7 +8,7 @@ const heroSliderData = [
         description: "Našli smo novu nadu. Našli smo način da nastavimo. Kada se svetla ugase, mi se dižemo. Nema smisla zaustavljati zabavu - moramo ići dalje i nastaviti i ustajati kroz noć. U tami mi svetlimo, sijamo i slavimo ovaj rastući duh različitosti, jedinstvenosti i napretka. Slušajte glasove, slušajte muziku, slušajte aplauze: mi smo duh mode, napretka, zabave i vodimo duh do najzabavnijih i najnaprednijih avantura koje možete zamisliti. Pridružite nam se i otkrijte blistavu noć. Pridružite nam se i otkrijte after parti.",
         img: img1,
         color: "Black",
-        path: "/catalog/P141633001"
+        path: "/proizvodi/P141633001"
     },
     {
         title: "Chelse boots",

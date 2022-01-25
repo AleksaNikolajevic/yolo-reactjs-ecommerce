@@ -95,7 +95,7 @@ const Catalog = () => {
     const showHideFilter = () => filterRef.current.classList.toggle('active')
 
     return (
-        <Helmet title="Sản phẩm">
+        <Helmet title="Kategorije">
             <div className="catalog">
                 <div className="catalog__filter" ref={filterRef}>
                     <div className="catalog__filter__close" onClick={() => showHideFilter()}>
@@ -103,7 +103,7 @@ const Catalog = () => {
                     </div>
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            danh mục sản phẩm
+                            Kategorije
                         </div>
                         <div className="catalog__filter__widget__content">
                             {
@@ -122,7 +122,7 @@ const Catalog = () => {
 
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            màu sắc
+                            Boje
                         </div>
                         <div className="catalog__filter__widget__content">
                             {
@@ -141,7 +141,7 @@ const Catalog = () => {
 
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            kích cỡ
+                            Veličine
                         </div>
                         <div className="catalog__filter__widget__content">
                             {

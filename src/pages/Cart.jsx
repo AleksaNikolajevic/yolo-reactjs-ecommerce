@@ -42,7 +42,7 @@ const Cart = () => {
                         <Button size="block">
                             Đặt hàng
                         </Button>
-                        <Link to="/catalog">
+                        <Link to="/proizvodi">
                             <Button size="block">
                                 Tiếp tục mua hàng
                             </Button>

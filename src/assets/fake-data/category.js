@@ -4,8 +4,8 @@ const category = [
         categorySlug: "cizme"
     },
     {
-        display: "Áo somi",
-        categorySlug: "ao-somi"
+        display: "Cizmice",
+        categorySlug: "cizmice"
     },
     {
         display: "Test",

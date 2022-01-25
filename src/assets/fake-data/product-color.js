@@ -1,26 +1,26 @@
 const colors = [
     {
-        display: "Trắng",
+        display: "Bela",
         color: "white"
     },
     {
-        display: "Hồng",
+        display: "Roze",
         color: "pink"
     },
     {
-        display: "Đen",
+        display: "Crna",
         color: "black"
     },
     {
-        display: "Vàng",
+        display: "Žuta",
         color: "yellow"
     },
     {
-        display: "Cam",
+        display: "Narandžasta",
         color: "orange"
     },
     {
-        display: "Xanh dương",
+        display: "Plava",
         color: "blue"
     }
 ]

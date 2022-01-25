@@ -42,7 +42,7 @@ const products = [
         image01: product_01_image_01,
         image02: product_01_image_02,
         categorySlug: "cizme",
-        colors: ["white", "red", "orange"],
+        colors: ["white"],
         slug: "P141633001",
         size: ["40", "41", "39", "38"],
         description: "Lice: Koža   <br>     Postava: Tekstil <br>       Đon: Guma"
