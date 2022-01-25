@@ -1,59 +1,179 @@
-import React from 'react'
+import React, { useCallback, useState, useEffect, useRef } from 'react'
 
+import Helmet from '../components/Helmet'
+import CheckBox from '../components/CheckBox'
+
+import productData from '../assets/fake-data/test'
+import category from '../assets/fake-data/category'
+import colors from '../assets/fake-data/product-color'
+import size from '../assets/fake-data/product-size'
+import Button from '../components/Button'
+import InfinityList from '../components/InfinityList'
 
 const Test = () => {
+
+    const initFilter = {
+        category: [],
+        color: [],
+        size: []
+    }
+
+    const productList = productData.getAllProducts()
+
+    const [products, setProducts] = useState(productList)
+
+    const [filter, setFilter] = useState(initFilter)
+
+    const filterSelect = (type, checked, item) => {
+        if (checked) {
+            switch(type) {
+                case "CATEGORY":
+                    setFilter({...filter, category: [...filter.category, item.categorySlug]})
+                    break
+                case "COLOR":
+                    setFilter({...filter, color: [...filter.color, item.color]})
+                    break
+                case "SIZE":
+                    setFilter({...filter, size: [...filter.size, item.size]})
+                    break
+                default:
+            }
+        } else {
+            switch(type) {
+                case "CATEGORY":
+                    const newCategory = filter.category.filter(e => e !== item.categorySlug)
+                    setFilter({...filter, category: newCategory})
+                    break
+                case "COLOR":
+                    const newColor = filter.color.filter(e => e !== item.color)
+                    setFilter({...filter, color: newColor})
+                    break
+                case "SIZE":
+                    const newSize = filter.size.filter(e => e !== item.size)
+                    setFilter({...filter, size: newSize})
+                    break
+                default:
+            }
+        }
+    }
+
+    const clearFilter = () => setFilter(initFilter)
+
+    const updateProducts = useCallback(
+        () => {
+            let temp = productList
+
+            if (filter.category.length > 0) {
+                temp = temp.filter(e => filter.category.includes(e.categorySlug))
+            }
+
+            if (filter.color.length > 0) {
+                temp = temp.filter(e => {
+                    const check = e.colors.find(color => filter.color.includes(color))
+                    return check !== undefined
+                })
+            }
+
+            if (filter.size.length > 0) {
+                temp = temp.filter(e => {
+                    const check = e.size.find(size => filter.size.includes(size))
+                    return check !== undefined
+                })
+            }
+
+            setProducts(temp)
+        },
+        [filter, productList],
+    )
+
+    useEffect(() => {
+        updateProducts()
+    }, [updateProducts])
+
+    const filterRef = useRef(null)
+
+    const showHideFilter = () => filterRef.current.classList.toggle('active')
+
     return (
-        <div className="container-fluid">
+        <Helmet title="Kategorije">
+            <div className="catalog">
+                <div className="catalog__filter" ref={filterRef}>
+                    <div className="catalog__filter__close" onClick={() => showHideFilter()}>
+                        <i className="bx bx-left-arrow-alt"></i>
+                    </div>
+                    <div className="catalog__filter__widget">
+                        <div className="catalog__filter__widget__title">
+                            Kategorije
+                        </div>
+                        <div className="catalog__filter__widget__content">
+                            {
+                                category.map((item, index) => (
+                                    <div key={index} className="catalog__filter__widget__content__item">
+                                        <CheckBox
+                                            label={item.display}
+                                            onChange={(input) => filterSelect("CATEGORY", input.checked, item)}
+                                            checked={filter.category.includes(item.categorySlug)}
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
 
-Uslovi korišćenja
-Poštovani korisnici, molimo Vas da pre poručivanja naših proizvoda, pažljivo pročitate sledeće uslove. Svakom kupovinom na našem sajtu, znači da ste pročitali uslove i da ste saglasni sa njima u potpunosti.
+                    <div className="catalog__filter__widget">
+                        <div className="catalog__filter__widget__title">
+                            Boje
+                        </div>
+                        <div className="catalog__filter__widget__content">
+                            {
+                                colors.map((item, index) => (
+                                    <div key={index} className="catalog__filter__widget__content__item">
+                                        <CheckBox
+                                            label={item.display}
+                                            onChange={(input) => filterSelect("COLOR", input.checked, item)}
+                                            checked={filter.color.includes(item.color)}
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
 
-Mesto isporuke naručene robe mora se nalaziti na teritoriji Republike Srbije.
+                    <div className="catalog__filter__widget">
+                        <div className="catalog__filter__widget__title">
+                            Veličine
+                        </div>
+                        <div className="catalog__filter__widget__content">
+                            {
+                                size.map((item, index) => (
+                                    <div key={index} className="catalog__filter__widget__content__item">
+                                        <CheckBox
+                                            label={item.display}
+                                            onChange={(input) => filterSelect("SIZE", input.checked, item)}
+                                            checked={filter.size.includes(item.size)}
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
 
-Dostava nije ograničena iznosom ili količinom.
-
-Prodavac je u obavezi da se stara da roba u najkraćem roku bude dostavljena Kupcu putem kurirske službe, a u slučaju nemogućnosti slanja robe iz bilo kog razloga, dužan je da Kupca o tome obavesti u roku ne dužem od sedam dana.
-
-Kupac može u zakonskom roku od 14 dana po prijemu, da poručenu robu vrati prodavcu bez ikakvog objašnjenja. Prodavac je u obavezi, da u tom slučaju kupcu vrati celokupan plaćeni iznos, izuzev troškova dostave robe.
-
-Zamena proizvoda može se izvršiti u roku od 14 dana od dana kupovine, odnosno uz račun i originalno pakovanje proizvoda. Troškove zamene i ovakvog povraćaja snosi kupac. Da biste ostvarili neko od prava prilikom vraćanja kupljenog proizvoda, naručena roba ne sme biti upotrebom oštećena ili pohabana, mora biti vraćena u originalnoj ambalaži, uz priložen račun.
-
-Originalna ambalaža ne sme biti pohabana ili na drugi način oštećena, jer se u tom slučaju ne priznaje pravo na puni povraćaj novca, već se od ukupne vraćene sume odbijaju troškovi oštećene ambalaže.
-
-DIP-Trade d.o.o. garantuje kvalitet i originalnost robe koju isporučuje.
-
-U slučaju da Kupac izvrši uplatu iznosa koji je manji od iznosa na koji je glasila profaktura, smatraće se da je kupoprodaja nije zaključena.
-
-Za sve porudžbine čija je vrednost jednaka ili je veća od 5.000 dinara, isporuka je besplatna.
-
-Troškovi dostave za pošiljke čija je vrednost ispod 5.000 dinara možete pogledati na sajtu kurirske službe DExpress www.dexpress.rs/rs/cenovnik
-
-Troškovi povraćaja robe plaća kupac kurirskoj službi po cenovniku koji možete pogledati na sajtu kurirske službe DExpress www.dexpress.rs/rs/cenovnik
-
-Roba se isporučuje Kupcu lično ili osobi koju je Kupac naveo kao primaoca pošiljke. Kupac ili primalac pošiljke mora se nalaziti na adresi koja je u porudžbenici navedena za isporuku robe u periodu od 8 do 16 časova, radnim danima i subotom.
-
-Ukoliko dostavljanje naručene robe bude onemogućeno zbog odsustva kupca ili druge osobe predviđene ovim Uslovima i ukoliko roba bude morala da se vrati u polazišno mesto Kupac će biti dužan da snosi i troškove povraćaja robe. Robu sa povraćaja, Prodavac može dalje prodavati trećim licima, jer se u tom momentu kupoprodaja smatra raskinutom.
-
-Prilikom preuzimanja paketa Kupac u prisustvu kurira ili poštara vizuelno proverava paket.
-
-Ukoliko na paketu ima vidnih oštećenja u obliku pocepanih delova ili nagnječenja, Kupac je dužan da zahteva otvaranje paketa u prisustvu službenog lica. Ako se tom prilikom ustanovi da su artikli oštećeni, službenik kurirske službe pravi zapisnik o reklamaciji.
-
-U slučaju oštećenja sadržine paketa, kurirska služba nadoknađuje nastale troškove.
-
-Vaše proizvode koje ste poručili i želite da kupite putem sajta www.flylondonsrbija.rs možete platiti na tri načina:
-
-Uplatnicom u banci, pošti ili e-bankingom
-Platnim karticama
-Pouzećem
-U slučaju plaćanja platnom karticom vaša sredstva će biti rezervisana do momenta potvrde ili otkaza porudžbine od strane operatera internet prodaje.
-
-Poslednji korak poručivanja: Klikom na dugme “Poruči” dobijate automatsku e-mail poruku na osnovu koje Vas obaveštavamo da je Vaša porudžbina uspešno prosleđena službi internet prodaje na dalju obradu. Služba internet prodaje Prodavca će nastojati da u najkraćem roku proveri da li smo u mogućnosti da vam obezbedimo poručeni artikal (artikle).
-
-Ukoliko nismo u mogućnosti da vam obezbedimo poručeni artikal, primićete e-mail u kojem vas obaveštavamo da poručeni artikal više nije raspoloživ, te da smo prinuđeni da vam otkažemo porudžbinu. U tom slučaju porudžbenica neće biti realizovana.
-
-Ukoliko nismo u mogućnosti da vam obezbedimo pojedine od više artikala koje sadrži vaša porudžbenica, pozvaće vas telefonom naš operater internet prodaje i obavestiti koji od poručenih artikala nisu raspoloživi, a biće zatražena i vaša saglasnost da vam isporučimo samo one artikle koje ste poručili, a mi ih pri tom imamo raspoložive na stanju. Nastojimo da stanje veličina i modela na sajtu bude ažurno, ali zbog dinamičnosti tržišta i broja maloprodajnih objekata u Srbiji postoji mogućnost da u određenim slučajevima poručeni proizvod više ne bude raspoloživ u našem magacinu.
-
-</div>
+                    <div className="catalog__filter__widget">
+                        <div className="catalog__filter__widget__content">
+                            <Button size="sm" onClick={clearFilter}>xóa bộ lọc</Button>
+                        </div>
+                    </div>
+                </div>
+                <div className="catalog__filter__toggle">
+                    <Button size="sm" onClick={() => showHideFilter()}>bộ lọc</Button>
+                </div>
+                <div className="catalog__content">
+                    <InfinityList
+                        data={products}
+                    />
+                </div>
+            </div>
+        </Helmet>
     )
 }
 

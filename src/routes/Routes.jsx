@@ -7,6 +7,8 @@ import Catalog from '../pages/Catalog'
 import Cart from '../pages/Cart'
 import Product from '../pages/Product'
 import Policy from '../pages/Policy'
+import Test from '../pages/Test'
+
 
 const Routes = () => {
     return (
@@ -16,6 +18,8 @@ const Routes = () => {
             <Route path='/proizvodi' component={Catalog}/>
             <Route path='/cart' component={Cart}/>
             <Route path='/policy' component={Policy}/>
+            <Route path='/test' component={Test}/>
+
 
         </Switch>
     )

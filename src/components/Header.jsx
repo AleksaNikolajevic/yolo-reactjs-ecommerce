@@ -9,16 +9,20 @@ const mainNav = [
         path: "/"
     },
     {
-        display: "Proizvodi",
+        display: "Žene",
         path: "/proizvodi"
     },
     {
-        display: "Akcije",
+        display: "Muškarci",
         path: "/akcije"
     },
     {
-        display: "Kontakt",
+        display: "Akcije",
         path: "/contact"
+    },
+    {
+        display: "Novosti",
+        path: "/novosti"
     }
 ]
 

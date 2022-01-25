@@ -27,24 +27,24 @@ const Cart = () => {
     }, [cartItems])
 
     return (
-        <Helmet title="Giỏ hàng">
+        <Helmet title="Korpa">
             <div className="cart">
                 <div className="cart__info">
                     <div className="cart__info__txt">
                         <p>
-                            Bạn đang có {totalProducts} sản phẩm trong giỏ hàng
+                            Dobrodosli {totalProducts} 
                         </p>
                         <div className="cart__info__txt__price">
-                            <span>Thành tiền:</span> <span>{numberWithCommas(Number(totalPrice))}</span>
+                            <span>Broj proizvoda u korpi:</span> <span>{numberWithCommas(Number(totalPrice))}</span>
                         </div>
                     </div>
                     <div className="cart__info__btn">
                         <Button size="block">
-                            Đặt hàng
+                            Poruči
                         </Button>
                         <Link to="/proizvodi">
                             <Button size="block">
-                                Tiếp tục mua hàng
+                                Nastavi kupovinu
                             </Button>
                         </Link>
                         
