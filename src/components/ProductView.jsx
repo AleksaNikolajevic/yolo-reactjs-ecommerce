@@ -56,12 +56,12 @@ const ProductView = props => {
 
     const check = () => {
         if (color === undefined) {
-            alert('Vui lòng chọn màu sắc!')
+            alert('Morate odabrati boju!')
             return false
         }
 
         if (size === undefined) {
-            alert('Vui lòng chọn kích cỡ!')
+            alert('Morate odabrati veličinu!')
             return false
         }
 
@@ -78,9 +78,9 @@ const ProductView = props => {
                 quantity: quantity
             }
             if (dispatch(addItem(newItem))) {
-                alert('Success')
+                alert('Uspešno dodatu u korpu')
             } else {
-                alert('Fail')
+                alert('Dodavanje u korpu nije uspelo')
             }
         }
     }
@@ -125,7 +125,7 @@ const ProductView = props => {
                     <div className="product-description__toggle">
                         <Button size="sm" onClick={() => setDescriptionExpand(!descriptionExpand)}>
                             {
-                                descriptionExpand ? 'Thu gọn' : 'Xem thêm'
+                                descriptionExpand ? 'Sakrij' : 'Vidi još'
                             }
                         </Button>
                     </div>
@@ -140,7 +140,7 @@ const ProductView = props => {
                 </div>
                 <div className="product__info__item">
                     <div className="product__info__item__title">
-                        Màu sắc
+                       Boje
                     </div>
                     <div className="product__info__item__list">
                         {
@@ -154,7 +154,7 @@ const ProductView = props => {
                 </div>
                 <div className="product__info__item">
                     <div className="product__info__item__title">
-                        Kích cỡ
+                        Veličine
                     </div>
                     <div className="product__info__item__list">
                         {
@@ -170,7 +170,7 @@ const ProductView = props => {
                 </div>
                 <div className="product__info__item">
                     <div className="product__info__item__title">
-                        Số lượng
+                        Količina
                     </div>
                     <div className="product__info__item__quantity">
                         <div className="product__info__item__quantity__btn" onClick={() => updateQuantity('minus')}>
@@ -185,19 +185,19 @@ const ProductView = props => {
                     </div>
                 </div>
                 <div className="product__info__item">
-                    <Button onClick={() => addToCart()}>thêm vào giỏ</Button>
-                    <Button onClick={() => goToCart()}>mua ngay</Button>
+                    <Button onClick={() => addToCart()}>Dodaj u korpu</Button>
+                    <Button onClick={() => goToCart()}>Poruči sada</Button>
                 </div>
             </div>
             <div className={`product-description mobile ${descriptionExpand ? 'expand' : ''}`}>
                 <div className="product-description__title">
-                    Chi tiết sản phẩm
+                    Detalji proizvoda
                 </div>
                 <div className="product-description__content" dangerouslySetInnerHTML={{__html: product.description}}></div>
                 <div className="product-description__toggle">
                     <Button size="sm" onClick={() => setDescriptionExpand(!descriptionExpand)}>
                         {
-                            descriptionExpand ? 'Thu gọn' : 'Xem thêm'
+                            descriptionExpand ? 'Sakrij' : 'Saznaj više'
                         }
                     </Button>
                 </div>

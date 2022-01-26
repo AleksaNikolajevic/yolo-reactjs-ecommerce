@@ -5,20 +5,20 @@ import logo from '../assets/images/Logo-2.png'
 
 const mainNav = [
     {
-        display: "Fly London",
+        display: "FLY LONDON",
         path: "/"
     },
     {
-        display: "Žene",
+        display: "ŽENE",
         path: "/proizvodi"
     },
     {
-        display: "Muškarci",
+        display: "MUŠKARCI",
         path: "/akcije"
     },
     {
-        display: "Akcije",
-        path: "/contact"
+        display: "AKCIJE",
+        path: "/akcije"
     }
 ]
 

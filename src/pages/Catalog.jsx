@@ -160,12 +160,12 @@ const Catalog = () => {
 
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__content">
-                            <Button size="sm" onClick={clearFilter}>xóa bộ lọc</Button>
+                            <Button size="sm" onClick={clearFilter}>Poništi filtere</Button>
                         </div>
                     </div>
                 </div>
                 <div className="catalog__filter__toggle">
-                    <Button size="sm" onClick={() => showHideFilter()}>bộ lọc</Button>
+                    <Button size="sm" onClick={() => showHideFilter()}>Filteri</Button>
                 </div>
                 <div className="catalog__content">
                     <InfinityList

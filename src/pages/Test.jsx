@@ -22,9 +22,9 @@ const Test = () => {
             {/* hero slider */}
             <Carousel variant="dark" controls="false">
   <Carousel.Item>
-    <img onClick={()=> window.open("https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react", "_blank")}s
+    <img onClick={()=> window.open("/proizvodi/P141941028", "_blank")}s
       className="d-block w-100"
-      src="https://via.placeholder.com/1080x540.png"
+      src="https://1971747289.rsc.cdn77.org/images/block1_2907_gb.jpg?1639132646"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -33,9 +33,9 @@ const Test = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img onClick={()=> window.open("https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react", "_blank")}
+    <img onClick={()=> window.open("/proizvodi/P141941028", "_blank")}
       className="d-block w-100"
-      src="https://via.placeholder.com/1080x540.png"
+      src="https://1971747289.rsc.cdn77.org/images/block1_2935_gb.jpg?1639568948"
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -44,9 +44,9 @@ const Test = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img onClick={()=> window.open("https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react", "_blank")}
+    <img onClick={()=> window.open("/proizvodi/P141941028", "_blank")}
       className="d-block w-100"
-      src="https://via.placeholder.com/1080x540.png"
+      src="https://1971747289.rsc.cdn77.org/images/banner430_gb.jpg?1642461833"
       alt="Third slide"
     />
     <Carousel.Caption>
@@ -64,7 +64,7 @@ const Test = () => {
             {/* end hero slider */}
 
             {/* policy section */}
-            <Section>
+           {/*  <Section>
                 <SectionBody>
                     <Grid
                         col={3}
@@ -83,7 +83,7 @@ const Test = () => {
                         }
                     </Grid>
                 </SectionBody>
-            </Section>
+            </Section> */}
             {/* end policy section */}
           
             {/* best selling section */}

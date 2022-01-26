@@ -1,23 +1,39 @@
 const size = [
     {
-        display: "S",
-        size: "s"
+        display: "36",
+        size: "36"
     },
     {
-        display: "M",
-        size: "m"
+        display: "37",
+        size: "37"
     },
     {
-        display: "L",
-        size: "l"
+        display: "38",
+        size: "38"
     },
     {
-        display: "XL",
-        size: "xl"
+        display: "39",
+        size: "39"
     },
     {
-        display: "XXL",
-        size: "xxl"
+        display: "41",
+        size: "41"
+    },
+    {
+        display: "42",
+        size: "42"
+    },
+    {
+        display: "43",
+        size: "43"
+    },
+    {
+        display: "44",
+        size: "44"
+    },
+    {
+        display: "45",
+        size: "45"
     },
 ]
 
