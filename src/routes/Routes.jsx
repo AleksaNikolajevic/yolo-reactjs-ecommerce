@@ -8,6 +8,8 @@ import Cart from '../pages/Cart'
 import Product from '../pages/Product'
 import Policy from '../pages/Policy'
 import Test from '../pages/Test'
+import Carousel from '../pages/Carousel'
+
 
 
 const Routes = () => {
@@ -19,6 +21,8 @@ const Routes = () => {
             <Route path='/cart' component={Cart}/>
             <Route path='/policy' component={Policy}/>
             <Route path='/test' component={Test}/>
+            <Route path='/carousel' component={Carousel}/>
+
 
 
         </Switch>

@@ -1,6 +1,8 @@
 const product_01_image_01 = require('../images/products/product-01 (1).jpg').default
 const product_01_image_02 = require('../images/products/product-01 (2).jpg').default
-// const product_01_image_03 = require('../images/products/product-01 (3).jpg').default
+const product_01_image_03 = require('../images/products/product-01 (3).jpg').default
+const product_01_image_04 = require('../images/products/product-01 (4).jpg').default
+
 
 const product_02_image_01 = require('../images/products/product-02 (1).jpg').default
 const product_02_image_02 = require('../images/products/product-02 (2).jpg').default
@@ -37,15 +39,24 @@ const product_12_image_02 = require('../images/products/product-12 (2).jpg').def
 
 const products = [
     {
-        title: "010718425 CARIBOU čizma",
-        price: '14000',
+        title: "FLY LONDON Zip Up Boots JALO882FLY NAOMI OFFWHITE",
+        price: '26000',
         image01: product_01_image_01,
         image02: product_01_image_02,
+        image03: product_01_image_03,
+        image04: product_01_image_04,
         categorySlug: "cizme",
-        colors: ["white"],
+        colors: ["white", "black"],
         slug: "P141633001",
-        size: ["40", "41", "39", "38"],
-        description: "Lice: Koža   <br>     Postava: Tekstil <br>       Đon: Guma"
+        size: ["35", "36", "37", "38", "39", "40"],
+        description: 'Ako tražite hrabar i moderan izgled, ne dozvolite da pobegnete od ovih ženskih kožnih čizama sa rajsferšlusom. Kreirao Fli London <br><br>' +
+"        Model: JALO882FLI <br>" +
+"REF: FLIP144882001 <br>" +
+"Materijal: Koža; <br>" +
+"Postava: mikrofiber; <br>" +
+"Uložak: mikrofiber; <br>" +
+"Potplat: guma; <br>" +
+"Visina pete: 5 cm; <br>"
     },
     {
         title: "Fly London P141941028",

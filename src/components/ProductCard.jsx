@@ -47,6 +47,8 @@ const ProductCard = props => {
 ProductCard.propTypes = {
     img01: PropTypes.string.isRequired,
     img02: PropTypes.string.isRequired,
+    img03: PropTypes.string,
+    img04: PropTypes.string,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired,

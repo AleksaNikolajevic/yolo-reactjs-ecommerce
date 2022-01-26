@@ -5,7 +5,7 @@ const PolicyCard = props => {
     return (
         <div className="policy-card">
             <div className="policy-card__icon">
-                <i className={props.icon}></i>
+                <img src={props.image} alt="policy"/>
             </div>
             <div className="policy-card__info">
                 <div className="policy-card__info__name">
@@ -22,7 +22,7 @@ const PolicyCard = props => {
 PolicyCard.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired
 }
 
 export default PolicyCard

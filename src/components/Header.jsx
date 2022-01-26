@@ -19,10 +19,6 @@ const mainNav = [
     {
         display: "Akcije",
         path: "/contact"
-    },
-    {
-        display: "Novosti",
-        path: "/novosti"
     }
 ]
 

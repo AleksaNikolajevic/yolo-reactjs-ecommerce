@@ -30,17 +30,17 @@ const Home = () => {
             <Section>
                 <SectionBody>
                     <Grid
-                        col={4}
+                        col={3}
                         mdCol={2}
                         smCol={1}
-                        gap={20}
+                        gap={15}
                     >
                         {
                             policy.map((item, index) => <Link key={index} to="/policy">
                                 <PolicyCard
                                     name={item.name}
                                     description={item.description}
-                                    icon={item.icon}
+                                    image={item.image}
                                 />
                             </Link>)
                         }

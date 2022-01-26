@@ -1,24 +1,24 @@
+const product_01_image_01 = require('../images/products/product-01 (1).jpg').default
+
+
 const policy = [
     {
         name: "Besplatna dostava",
-        description: "Besplatna dostava za proizvode u vrednosti preko 3000 dinara",
-        icon: "bx bx-shopping-bag"
+        description: "Besplatna dostava ",
+        icon: "bx bx-shopping-bag",
+        image: product_01_image_01
     },
     {
         name: "Plaćanje pouzeženjem",
         description: "Mogućnost plaćanja pouzećem i onlajn",
-        icon: "bx bx-credit-card"
+        image: product_01_image_01
     },
     {
         name: "Korisnička podrška",
         description: "Dostupna korisnička podrška od 08:00 do 17:00",
-        icon: "bx bx-diamond"
-    },
-    {
-        name: "Mogućnost vraćanja proizvoda",
-        description: "Vraćanje do proizvoda do 14 dana u slučaju onlajn kupovine",
-        icon: "bx bx-donate-heart"
+        image: product_01_image_01
     }
+    
 ]
 
 export default policy
