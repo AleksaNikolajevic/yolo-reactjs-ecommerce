@@ -14,7 +14,7 @@ const mainNav = [
     },
     {
         display: "MUŠKARCI",
-        path: "/akcije"
+        path: "/proizvodia"
     },
     {
         display: "AKCIJE",

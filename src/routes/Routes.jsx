@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router-dom'
 
 import Home from '../pages/Home'
 import Catalog from '../pages/Catalog'
+import Cataloga from '../pages/Cataloga'
+
 import Cart from '../pages/Cart'
 import Product from '../pages/Product'
 import Policy from '../pages/Policy'
@@ -25,6 +27,8 @@ const Routes = () => {
             <Route path='/test' component={Test}/>
             <Route path='/carousel' component={Carousel}/>
             <Route path='/akcije' component={Akcije}/>
+            <Route path='/proizvodia' component={Cataloga}/>
+
 
 
 
