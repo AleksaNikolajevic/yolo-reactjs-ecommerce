@@ -24,7 +24,7 @@ const Test = () => {
   <Carousel.Item>
     <img onClick={()=> window.open("/proizvodi/P141941028", "_blank")}s
       className="d-block w-100"
-      src="https://1971747289.rsc.cdn77.org/images/block1_2907_gb.jpg?1639132646"
+      src="../assets/images/1.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
