@@ -19,6 +19,10 @@ const mainNav = [
     {
         display: "AKCIJE",
         path: "/akcije"
+    },
+    {
+        display: "AKCIJE",
+        path: "/akcije"
     }
 ]
 
