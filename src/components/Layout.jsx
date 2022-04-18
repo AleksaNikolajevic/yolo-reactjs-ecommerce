@@ -3,6 +3,8 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import Header from './Header'
+import Headerc from './Headerc'
+
 import Footer from './Footer'
 import ProductViewModal from './ProductViewModal'
 
@@ -14,6 +16,8 @@ const Layout = () => {
             <Route render={props => (
                 <div>
                     <Header {...props}/>
+                    <Headerc {...props}/>
+
                     <div className="container">
                         <div className="main">
                             <Routes/>

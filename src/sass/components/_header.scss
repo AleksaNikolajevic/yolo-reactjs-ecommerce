@@ -33,6 +33,7 @@
 
     &__logo {
         @include flex(center, center);
+        align-items: baseline;
         position: absolute;
         inset: 0;
         pointer-events: none;
